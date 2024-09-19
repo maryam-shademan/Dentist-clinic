@@ -25,6 +25,7 @@
     <link href="vendor/aos/aos.css" rel="stylesheet" />
     <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
 
     <!-- Main CSS File -->
     <link href="css/main.css" rel="stylesheet" />
@@ -96,20 +97,23 @@
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
-        <img src="img/hero-bg.jpg" alt="" data-aos="fade-in" />
-
+        <img src="./img/BANER.webp" alt="تصویر بنر تبلیغاتی" data-aos="fade-in" />
+      
         <div class="container">
           <div class="row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 d-flex flex-column justify-content-center">
               <h1 data-aos="fade-up">روی آنچه مهم است تمرکز کنید</h1>
-              <blockquote data-aos="fade-up" data-aos-delay="100">
-                <p>متن پیش فرض وساختگی از قبل اماده شده</p>
-              </blockquote>
-              <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <figure>
+                <blockquote data-aos="fade-up" data-aos-delay="100">
+                  <p>متن پیش فرض و ساختگی از قبل آماده شده</p>
+                </blockquote>
+              
+              </figure>
+              <div class="d-flex mt-3" data-aos="fade-up" data-aos-delay="200">
                 <a href="#about" class="btn-get-started">شروع کنید</a>
                 <a
                   href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                  class="glightbox btn-watch-video d-flex align-items-center"
+                  class="glightbox btn-watch-video d-flex align-items-center ml-3"
                   ><i class="bi bi-play-circle"></i><span>دیدن ویدیو</span></a
                 >
               </div>
@@ -117,127 +121,101 @@
           </div>
         </div>
       </section>
+      
       <!-- /Hero Section -->
 
       <!-- Why Us Section -->
       <section id="why-us" class="why-us section">
         <div class="container">
           <div class="row g-0">
-            <div
-              class="col-xl-5 img-bg"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <img src="img/why-us-bg.jpg" alt="" />
+            <!-- تصویر سمت چپ -->
+            <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
+              <img src="./img/BANER2.png" alt="چرا ما" />
             </div>
-
-            <div
-              class="col-xl-7 slides position-relative"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="swiper init-swiper">
-                <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": "auto",
-                    "centeredSlides": true,
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                    },
-                    "navigation": {
-                      "nextEl": ".swiper-button-next",
-                      "prevEl": ".swiper-button-prev"
-                    }
-                  }
-                </script>
+      
+            <!-- سویپر سمت راست -->
+            <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
+              <div class="swiper-container">
                 <div class="swiper-wrapper">
+                  <!-- آیتم اول -->
                   <div class="swiper-slide">
                     <div class="item">
-                      <h3 class="mb-3">
-                        بیایید کسب و کار خود را با هم توسعه دهیم
-                      </h3>
+                      <h3 class="mb-3">بیایید کسب و کار خود را با هم توسعه دهیم</h3>
                       <h4 class="mb-3">متن از پیش ساخته شده پیش فرض</h4>
                       <p>متن از پیش ساخته شده پیش فرض</p>
                     </div>
                   </div>
-                  <!-- End slide item -->
-
+      
+                  <!-- آیتم دوم -->
                   <div class="swiper-slide">
                     <div class="item">
-                      <h3 class="mb-3">
-                        از آنجا می بینید که درد را دفع می کند
-                      </h3>
-                      <h4 class="mb-3">
-                        زیرا لذت و درد یکی هستند. کسی که به آنها صدمه زد.
-                      </h4>
-                      <p>
-                        درد چون پرواز لذت را به دنبال دارد. هیچ عاقبتی از آنها
-                        وجود ندارد، به خصوص وقتی آنها را به ضرورت متهم می کنیم.
-                        لذت درد به همان اندازه که هرگز درد ندارد، اما انتخاب
-                        حقیقت آسان. و برای دفع آنها. برای این است که دردها از
-                        درد دور شوند.
-                      </p>
+                      <h3 class="mb-3">از آنجا می بینید که درد را دفع می کند</h3>
+                      <h4 class="mb-3">زیرا لذت و درد یکی هستند...</h4>
+                      <p>درد چون پرواز لذت را به دنبال دارد. هیچ عاقبتی از آن‌ها وجود ندارد...</p>
                     </div>
                   </div>
-                  <!-- End slide item -->
-
+      
+                  <!-- آیتم سوم -->
                   <div class="swiper-slide">
                     <div class="item">
                       <h3 class="mb-3">چیزی که کمتر نیست</h3>
-                      <h4 class="mb-3">
-                        دردهای حاصل از لذت های زندگی را با نیازهای لذت ها توضیح
-                        خواهم داد.
-                      </h4>
-                      <p>
-                        نه لذت ها. آنها آن را شل یا شفاف می گذارند. همانطور که
-                        او می خواهد. یا لذت طلبی با سختی ها کنار گذاشته می شود.
-                        برای لذت دردها باید فرار کرد، یا
-                      </p>
+                      <h4 class="mb-3">دردهای حاصل از لذت‌های زندگی...</h4>
+                      <p>نه لذت‌ها. آن‌ها آن را شل یا شفاف می‌گذارند...</p>
                     </div>
                   </div>
-                  <!-- End slide item -->
-
+      
+                  <!-- آیتم چهارم -->
                   <div class="swiper-slide">
                     <div class="item">
-                      <h3 class="mb-3">او به اقتضای برخی می پردازد و نه لذت</h3>
-                      <h4 class="mb-3">
-                        زمان هایی که به این دلیل است که شما آن را به عنوان یک
-                        لذت دریافت می کنید. این چیزی نیست که از شر مشکلات حل
-                        نشده خلاص شوید. او و امثال آن، اما اینطور نیست.
-                      </h4>
-                      <p>
-                        به عنوان چیزها و اما یا و همه چیز ممکن است دردسرساز شود،
-                        یا ممکن است در لذت قرار گیرند. اغلب با درد و لذت تداخل
-                        دارد. به و که در چه کسی از ذهن از ذهن چیزها.
-                      </p>
+                      <h3 class="mb-3">او به اقتضای برخی می‌پردازد و نه لذت</h3>
+                      <h4 class="mb-3">زمان‌هایی که به این دلیل است که...</h4>
+                      <p>به عنوان چیزها و اما یا و همه چیز ممکن است دردسرساز شود...</p>
                     </div>
                   </div>
-                  <!-- End slide item -->
                 </div>
+      
+                <!-- Pagination و Navigation -->
                 <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
-
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            new Swiper('.swiper-container', {
+              loop: true,
+              speed: 600,
+              autoplay: {
+                delay: 5000,
+              },
+              slidesPerView: 'auto',
+              centeredSlides: true,
+              pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          });
+        </script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
       </section>
+      
       <!-- /Why Us Section -->
 
       <!-- Services Section -->
       <section id="services" class="services section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>خدمات</h2>
-          <p>نیازهای او ناشی از چیزی است که می خواهد از آن فرار کند</p>
+          <h2 class="text-center">خدمات ما</h2>
         </div>
         <!-- End Section Title -->
 
@@ -376,9 +354,9 @@
       <!-- Call To Action Section -->
       <section
         id="call-to-action"
-        class="call-to-action section dark-background"
+        class="call-to-action section dark-background "
       >
-        <img src="img/cta-bg.jpg" alt="" />
+        <img src="./img/ترسناک1.webp" alt="" />
 
         <div class="container">
           <div
@@ -388,14 +366,12 @@
           >
             <div class="col-xl-10">
               <div class="text-center">
-                <h3>فراخوانی برای اقدام</h3>
+                <h3 class="text-center">هم اکنون رزرو کنید</h3>
                 <p>
-                  در توبیخ در لذتی که می خواهد مویی از درد باشد عصبانی نشو به
-                  این امید که پرورشی نباشد. تا شهوت کور نشوند، گناهکارند کسانی
-                  که واجبات را رها می کنند و دل هایشان را نرم می کنند، این زحمت
-                  است.
+                  جهت استفاده از خدمات کلینیک (معاینه دندان, کامپوزت, پر کردن دندان , عصب کشی,
+                    لمینت,کشیدن دندان )رزرو کنید تا بتوانیم در بهترین زمان بهترین خدمات را برای دندان های شما فراهم کنیم
                 </p>
-                <a class="cta-btn" href="#">فراخوانی برای اقدام</a>
+                <a class="cta-btn" href="#">رزرو</a>
               </div>
             </div>
           </div>
@@ -634,215 +610,171 @@
       </section>
       <!-- /Recent Posts Section -->
     </main>
-
     <footer class="footer-09">
       <div class="container">
         <div class="row">
+          <!-- درباره ما -->
           <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-            <h2 class="footer-heading d-flex">
-              <span
-                class="icon d-flex align-items-center justify-content-center"
-                ><i class="ion-logo-ionic"></i
-              ></span>
-              About
+            <h2 class="footer-heading d-flex lign-items-center justify-content-center">
+              <span class="icon d-flex align-items-center justify-content-center">
+                <i class="ion-logo-ionic"></i>
+              </span>
+              درباره ما
             </h2>
             <div class="block-23 mb-3">
               <ul>
                 <li>
-                  <span class="icon ion-ios-pin"></span
-                  ><span class="text"
-                    >203 Fake St. Mountain View, San Francisco, California,
-                    USA</span
-                  >
+                  <span class="icon ion-ios-pin"></span>
+                  <span class="text">خیابان 203 جعلی، مونتین ویو، سان فرانسیسکو، کالیفرنیا، آمریکا</span>
                 </li>
                 <li>
-                  <a href="#"
-                    ><span class="icon ion-ios-call"></span
-                    ><span class="text">+2 392 3929 210</span></a
-                  >
+                  <a href="tel:+23923929210">
+                    <span class="icon ion-ios-call"></span>
+                    <span class="text">+2 392 3929 210</span>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"
-                    ><span class="icon ion-ios-send"></span
-                    ><span class="text"
-                      ><span
-                        class="__cf_email__"
-                        data-cfemail="d5bcbbb3ba95acbaa0a7b1bab8b4bcbbfbb6bab8"
-                        >[email&#160;protected]</span
-                      ></span
-                    ></a
-                  >
+                  <a href="mailto:info@example.com">
+                    <span class="icon ion-ios-send"></span>
+                    <span class="text">info@example.com</span>
+                  </a>
                 </li>
               </ul>
             </div>
             <form action="#" class="subscribe-form">
               <div class="form-group d-flex">
-                <input
-                  type="text"
-                  class="form-control rounded-left"
-                  placeholder="Enter email address"
-                />
+                <input type="text" class="form-control rounded-left" placeholder="ارسال کنید" />
                 <button type="submit" class="form-control submit rounded-right">
-                  <span class="sr-only">Submit</span
-                  ><i class="ion-ios-send"></i>
+                  <span class="sr-only">ایمیل را وارد کنید</span><i class="ion-ios-send"></i>
                 </button>
               </div>
             </form>
           </div>
+    
+          <!-- آخرین اخبار -->
           <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-            <h2 class="footer-heading d-flex align-items-center">
-              <span
-                class="icon d-flex align-items-center justify-content-center"
-                ><i class="ion-ios-list-box"></i></span
-              >Latest News
+            <h2 class="footer-heading d-flex lign-items-center justify-content-center">
+              <span class="icon d-flex align-items-center justify-content-center">
+                <i class="ion-ios-list-box"></i>
+              </span>
+              آخرین اخبار
             </h2>
             <div class="block-21 mb-4 d-flex">
-              <a
-                class="img mr-4 rounded"
-                style="background-image: url(images/image_1.jpg)"
-              ></a>
+              <a class="img mr-4 rounded" style="background-image: url('./img/clinic1.jpeg');"></a>
               <div class="text">
                 <h3 class="heading">
-                  <a href="#"
-                    >Even the all-powerful Pointing has no control about</a
-                  >
+                  <a href="#">حتی قدرت‌مندترین نشانه هم کنترل ندارد</a>
                 </h3>
                 <div class="meta">
-                  <div>
-                    <a href="#"
-                      ><span class="icon-calendar"></span> Oct. 16, 2019</a
-                    >
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-person"></span> Admin</a>
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-chat"></span> 19</a>
-                  </div>
+                  <div><a href="#"><span class="icon-calendar"></span> 16 اکتبر 2019</a></div>
+                  <div><a href="#"><span class="icon-person"></span> ادمین</a></div>
+                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
                 </div>
               </div>
             </div>
             <div class="block-21 mb-4 d-flex">
-              <a
-                class="img mr-4 rounded"
-                style="background-image: url(images/image_2.jpg)"
-              ></a>
+              <a class="img mr-8 rounded" style="background-image: url('./img/clinic2.jpeg');"></a>
               <div class="text">
                 <h3 class="heading">
-                  <a href="#"
-                    >Even the all-powerful Pointing has no control about</a
-                  >
+                  <a href="#">Even dfgrdgg the about</a>
                 </h3>
                 <div class="meta">
-                  <div>
-                    <a href="#"
-                      ><span class="icon-calendar"></span> Oct. 16, 2019</a
-                    >
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-person"></span> Admin</a>
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-chat"></span> 19</a>
-                  </div>
+                  <div><a href="#"><span class="icon-calendar"></span> Oct. 16, 2019</a></div>
+                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
                 </div>
               </div>
             </div>
           </div>
+    
+          <!-- اطلاعات -->
           <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-            <h2 class="footer-heading d-flex align-items-center">
-              <span
-                class="icon d-flex align-items-center justify-content-center"
-                ><i class="ion-ios-document"></i></span
-              >Information
+            <h2 class="footer-heading d-flex align-items-center justify-content-center">
+              <span class="icon d-flex align-items-center justify-content-center">
+                <i class="ion-ios-document"></i>
+              </span>
+              اطلاعات
             </h2>
-            <ul class="list-unstyled">
-              <li><a href="#" class="py-1 d-block">About</a></li>
-              <li><a href="#" class="py-1 d-block">Products</a></li>
-              <li><a href="#" class="py-1 d-block">Blog</a></li>
-              <li><a href="#" class="py-1 d-block">Contact</a></li>
-              <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
-            </ul>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">درباره ما</a></li>
+                <li><a href="#" class="py-1 d-block">محصولات</a></li>
+                <li><a href="#" class="py-1 d-block">وبلاگ</a></li>
+                <li><a href="#" class="py-1 d-block">تماس با ما</a></li>
+                <li><a href="#" class="py-1 d-block">راهنما و پشتیبانی</a></li>
+              </ul>
+            </div>
           </div>
+          
+          <!-- اینستاگرام -->
           <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-            <h2 class="footer-heading d-flex align-items-center">
-              <span
-                class="icon d-flex align-items-center justify-content-center"
-                ><i class="ion-logo-instagram"></i></span
-              >Instagram
+            <h2 class="footer-heading d-flex lign-items-center justify-content-center">
+              <span class="icon d-flex align-items-center justify-content-center">
+                <i class="ion-logo-instagram"></i>
+              </span>
+              گالری واینستاگرام
             </h2>
             <div class="block-24">
               <div class="row no-gutters">
-                <div class="col-4 col-md-4 p-1">
-                  <a
-                    href="#"
-                    class="img rounded"
-                    style="background-image: url(images/insta-1.jpg)"
-                  ></a>
+                <!-- تصویر اول -->
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img src="./img/clinic1.jpeg" alt="Instagram Image 1" class="img-fluid">
+                  </a>
                 </div>
-                <div class="col-4 col-md-4 p-1">
-                  <a
-                    href="#"
-                    class="img rounded"
-                    style="background-image: url(images/insta-2.jpg)"
-                  ></a>
+                <!-- تصویر دوم -->
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img src="./img/clinic2.jpeg" alt="Instagram Image 2" class="img-fluid">
+                  </a>
                 </div>
-                <div class="col-4 col-md-4 p-1">
-                  <a
-                    href="#"
-                    class="img rounded"
-                    style="background-image: url(images/insta-3.jpg)"
-                  ></a>
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img src="./img/clinic2.jpeg" alt="Instagram Image 2" class="img-fluid">
+                  </a>
                 </div>
-                <div class="col-4 col-md-4 p-1">
-                  <a
-                    href="#"
-                    class="img rounded"
-                    style="background-image: url(images/insta-4.jpg)"
-                  ></a>
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img src="./img/clinic2.jpeg" alt="Instagram Image 2" class="img-fluid">
+                  </a>
                 </div>
-                <div class="col-4 col-md-4 p-1">
-                  <a
-                    href="#"
-                    class="img rounded"
-                    style="background-image: url(images/insta-5.jpg)"
-                  ></a>
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img src="./img/clinic2.jpeg" alt="Instagram Image 2" class="img-fluid">
+                  </a>
                 </div>
-                <div class="col-4 col-md-4 p-1">
-                  <a
-                    href="#"
-                    class="img rounded"
-                    style="background-image: url(images/insta-6.jpg)"
-                  ></a>
+                
+                <!-- تصویر سوم -->
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img src="./img/clinic2.jpeg" alt="Instagram Image 3" class="img-fluid">
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row mt-5 pt-4 border-top">
+    
+        <!-- کپی رایت -->
+        <div class="row mt-5 pt-4 border-top ">
           <div class="col-md-6 col-lg-8">
             <p class="copyright">
-              Copyright &copy;
-              <script
-                data-cfasync="false"
-                src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-              ></script>
+              کپی رایت &copy;
               <script>
                 document.write(new Date().getFullYear());
-              </script>
-              All rights reserved.
+              </script> تمامی حقوق محفوظ است.
             </p>
           </div>
-          <div class="col-md-6 col-lg-4 text-md-right">
-            <p class="copyright">
-              This template is made with
-              <i class="ion-ios-heart" aria-hidden="true"></i> by
-              <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+          <div class="col-md-6 col-lg-4 text-center d-flex flex-column align-items-center">
+            <p class="copyright mb-0">
+              این سایت  <i class="ion-ios-heart" aria-hidden="true"></i> ساخته شده توسط
             </p>
+            <a href="https://colorlib.com" target="_blank">مریم شادمان & امیررضا فرزان</a>
           </div>
         </div>
       </div>
     </footer>
+    
 
     <!-- Scroll Top -->
     <a

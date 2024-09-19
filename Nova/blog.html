@@ -1,483 +1,771 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Blog - Nova Bootstrap Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Blog - Nova Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="../src/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../src/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../src/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../src/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="../src/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="../src/css/main.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Nova
   * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
   * Updated: Jun 29 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body class="blog-page">
+  <body class="blog-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Nova</h1>
+        </a>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Nova</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">خانه<br></a></li>
-          <li><a href="about.html">درباه ما</a></li>
-          <li><a href="services.html">خدمات</a></li>
-          <li><a href="portfolio.html">پروفایل</a></li>
-          <li><a href="team.html">تم</a></li>
-          <li><a href="blog.html">بلاگ </a></li>
-          <li class="dropdown"><a href="#"><span>صفحه </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">صفحه کشویی 1</a></li>
-              <li class="dropdown"><a href="#"><span>صفحه کشویی</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">صفحه کشویی 1</a></li>
-                  <li><a href="#">صفحه کشویی 2</a></li>
-                  <li><a href="#">صفحه کشویی 3</a></li>
-                  <li><a href="#">صفحه کشویی 4</a></li>
-                  <li><a href="#">صفحه کشویی 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">صفحه کشویی 2</a></li>
-              <li><a href="#">صفحه کشویی 3</a></li>
-              <li><a href="#">صفحه کشویی 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">تماس باما</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/blog-page-title-bg.jpg);">
-      <div class="container">
-        <h1>بلاگ</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">خانه</a></li>
-            <li class="current">بلاگ</li>
-          </ol>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html" class="active">خانه<br /></a>
+            </li>
+            <li><a href="about.html">درباه ما</a></li>
+            <li><a href="services.html">خدمات</a></li>
+            <li><a href="portfolio.html">پروفایل</a></li>
+            <li><a href="team.html">تم</a></li>
+            <li><a href="blog.html">بلاگ </a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>صفحه </span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#">صفحه کشویی 1</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>صفحه کشویی</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">صفحه کشویی 1</a></li>
+                    <li><a href="#">صفحه کشویی 2</a></li>
+                    <li><a href="#">صفحه کشویی 3</a></li>
+                    <li><a href="#">صفحه کشویی 4</a></li>
+                    <li><a href="#">صفحه کشویی 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">صفحه کشویی 2</a></li>
+                <li><a href="#">صفحه کشویی 3</a></li>
+                <li><a href="#">صفحه کشویی 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">تماس باما</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </header>
 
-    <div class="container">
-      <div class="row">
+    <main class="main">
+      <!-- Page Title -->
+      <div
+        class="page-title dark-background"
+        data-aos="fade"
+        style="background-image: url(assets/img/blog-page-title-bg.jpg)"
+      >
+        <div class="container">
+          <h1>بلاگ</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">خانه</a></li>
+              <li class="current">بلاگ</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
 
-        <div class="col-lg-8">
-
-          <!-- Blog Posts Section -->
-          <section id="blog-posts" class="blog-posts section">
-
-            <div class="container">
-              <div class="row gy-4">
-
-                <div class="col-lg-6">
-                  <article>
-
-                    <div class="post-img">
-                      <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-                    </div>
-
-                    <p class="post-category">سیاست</p>
-
-                    <h2 class="title">
-                      <a href="blog-details.html">انتخاب درد شایسته ترین لذت در آن زمان است</a>
-                    </h2>
-
-                    <div class="d-flex align-items-center">
-                      <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                      <div class="post-meta">
-                        <p class="post-author">ماریا دو</p>
-                        <p class="post-date">
-                          <time datetime="2022-01-01">1 ژانویه 2022</time>
-                        </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <!-- Blog Posts Section -->
+            <section id="blog-posts" class="blog-posts section">
+              <div class="container">
+                <div class="row gy-4">
+                  <div class="col-lg-6">
+                    <article>
+                      <div class="post-img">
+                        <img
+                          src="../src/img/blog/blog-1.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
                       </div>
-                    </div>
 
-                  </article>
-                </div><!-- End post list item -->
+                      <p class="post-category">ارتودنسی داندان</p>
 
-                <div class="col-lg-6">
-                  <article>
+                      <h2 class="title">
+                        <a href="blog-details.html">
+                          چه زمانی دندان های خود را ارتودنسی کنیم؟
+                        </a>
+                      </h2>
 
-                    <div class="post-img">
-                      <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-                    </div>
-
-                    <p class="post-category">ورزش ها</p>
-
-                    <h2 class="title">
-                      <a href="blog-details.html">اما تا زمانی که از بزرگان متنفر نباشد، دردی نخواهد داشت</a>
-                    </h2>
-
-                    <div class="d-flex align-items-center">
-                      <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                      <div class="post-meta">
-                        <p class="post-author">آلیسا مایر</p>
-                        <p class="post-date">
-                          <time datetime="2022-01-01">5 ژوئن 2022</time>
-                        </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../src/img/blog/blog-author.jpg"
+                          alt=""
+                          class="img-fluid post-author-img flex-shrink-0"
+                        />
+                        <div class="post-meta">
+                          <p class="post-author">ماریا دو</p>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">1 ژانویه 2022</time>
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </article>
+                  </div>
+                  <!-- End post list item -->
 
-                  </article>
-                </div><!-- End post list item -->
-
-                <div class="col-lg-6">
-                  <article>
-
-                    <div class="post-img">
-                      <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-                    </div>
-
-                    <p class="post-category">سرگرمی</p>
-
-                    <h2 class="title">
-                      <a href="blog-details.html">ما می‌توانیم از دست بدهیم تا آنها را به‌عنوان که در آن چون و از دست داده دریافت کند</a>
-                    </h2>
-
-                    <div class="d-flex align-items-center">
-                      <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                      <div class="post-meta">
-                        <p class="post-author">مارک داور</p>
-                        <p class="post-date">
-                          <time datetime="2022-01-01">22 ژوئن 2022</time>
-                        </p>
+                  <div class="col-lg-6">
+                    <article>
+                      <div class="post-img">
+                        <img
+                          src="../src/img/blog/blog-2.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
                       </div>
-                    </div>
 
-                  </article>
-                </div><!-- End post list item -->
+                      <p class="post-category">کامپوزت</p>
 
-                <div class="col-lg-6">
-                  <article>
+                      <h2 class="title">
+                        <a href="blog-details.html">
+                          بهترین مارک های کامپوزت چیست؟</a
+                        >
+                      </h2>
 
-                    <div class="post-img">
-                      <img src="assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
-                    </div>
-
-                    <p class="post-category">ورزش/p>
-
-                    <h2 class="title">
-                      <a href="blog-details.html">این موضوع چیزهایی نیست که بوی آنها کمتر متمایز است</a>
-                    </h2>
-
-                    <div class="d-flex align-items-center">
-                      <img src="assets/img/blog/blog-author-4.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                      <div class="post-meta">
-                        <p class="post-author">لیزا نیمار</p>
-                        <p class="post-date">
-                          <time datetime="2022-01-01">30 ژوئن 2022</time>
-                        </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../src/img/blog/blog-author-2.jpg"
+                          alt=""
+                          class="img-fluid post-author-img flex-shrink-0"
+                        />
+                        <div class="post-meta">
+                          <p class="post-author">آلیسا مایر</p>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">5 ژوئن 2022</time>
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </article>
+                  </div>
+                  <!-- End post list item -->
 
-                  </article>
-                </div><!-- End post list item -->
-
-                <div class="col-lg-6">
-                  <article>
-
-                    <div class="post-img">
-                      <img src="assets/img/blog/blog-5.jpg" alt="" class="img-fluid">
-                    </div>
-
-                    <p class="post-category">سیاست</p>
-
-                    <h2 class="title">
-                      <a href="blog-details.html">ما او را متهم می کنیم که به دنبال کسی است که به راحتی بدهکار شود</a>
-                    </h2>
-
-                    <div class="d-flex align-items-center">
-                      <img src="assets/img/blog/blog-author-5.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                      <div class="post-meta">
-                        <p class="post-author">دنیس پترسون</p>
-                        <p class="post-date">
-                          <time datetime="2022-01-01">30 ژانویه 2022</time>
-                        </p>
+                  <div class="col-lg-6">
+                    <article>
+                      <div class="post-img">
+                        <img
+                          src="../src/img/blog/blog-3.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
                       </div>
-                    </div>
 
-                  </article>
-                </div><!-- End post list item -->
+                      <p class="post-category">لمینت</p>
 
-                <div class="col-lg-6">
-                  <article>
+                      <h2 class="title">
+                        <a href="blog-details.html"
+                          >لمینت بهتر است یا کامپوزت؟</a
+                        >
+                      </h2>
 
-                    <div class="post-img">
-                      <img src="assets/img/blog/blog-6.jpg" alt="" class="img-fluid">
-                    </div>
-
-                    <p class="post-category">سرگرمی</p>
-
-                    <h2 class="title">
-                      <a href="blog-details.html">آنها تمایزی را ارائه می دهند که برخی نیز هرگز آن را باز نمی کنند</a>
-                    </h2>
-
-                    <div class="d-flex align-items-center">
-                      <img src="assets/img/blog/blog-author-6.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                      <div class="post-meta">
-                        <p class="post-author">میکا لاندون</p>
-                        <p class="post-date">
-                          <time datetime="2022-01-01">14 فوریه 2022</time>
-                        </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../src/img/blog/blog-author-3.jpg"
+                          alt=""
+                          class="img-fluid post-author-img flex-shrink-0"
+                        />
+                        <div class="post-meta">
+                          <p class="post-author">مارک داور</p>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">22 ژوئن 2022</time>
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </article>
+                  </div>
+                  <!-- End post list item -->
 
-                  </article>
-                </div><!-- End post list item -->
+                  <div class="col-lg-6">
+                    <article>
+                      <div class="post-img">
+                        <img
+                          src="../src/img/blog/blog-4.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
 
+                      <p class="post-category">کشیدن دندان</p>
+
+                      <h2 class="title">
+                        <a href="blog-details.html">کشیدن دندان در چند دقیقه</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../src/img/blog/blog-author-4.jpg"
+                          alt=""
+                          class="img-fluid post-author-img flex-shrink-0"
+                        />
+                        <div class="post-meta">
+                          <p class="post-author">لیزا نیمار</p>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">30 ژوئن 2022</time>
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <!-- End post list item -->
+
+                  <div class="col-lg-6">
+                    <article>
+                      <div class="post-img">
+                        <img
+                          src="../src/img/blog/blog-5.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+
+                      <p class="post-category">روکش دندان</p>
+
+                      <h2 class="title">
+                        <a href="blog-details.html"
+                          >مناسب ترن روکش دندان متناسب باهر شخص</a
+                        >
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../src/img/blog/blog-author-5.jpg"
+                          alt=""
+                          class="img-fluid post-author-img flex-shrink-0"
+                        />
+                        <div class="post-meta">
+                          <p class="post-author">دنیس پترسون</p>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">30 ژانویه 2022</time>
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <!-- End post list item -->
+
+                  <div class="col-lg-6">
+                    <article>
+                      <div class="post-img">
+                        <img
+                          src="../src/img/blog/blog-6.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+
+                      <p class="post-category">معاینه دندان</p>
+
+                      <h2 class="title">
+                        <a href="blog-details.html"
+                          >بهترین روش های معاینه دندان چیست؟</a
+                        >
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../src/img/blog/blog-author-6.jpg"
+                          alt=""
+                          class="img-fluid post-author-img flex-shrink-0"
+                        />
+                        <div class="post-meta">
+                          <p class="post-author">میکا لاندون</p>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">14 فوریه 2022</time>
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <!-- End post list item -->
+                </div>
               </div>
-            </div>
+            </section>
+            <!-- /Blog Posts Section -->
 
-          </section><!-- /Blog Posts Section -->
+            <!-- Blog Pagination Section -->
+            <section id="blog-pagination" class="blog-pagination section">
+              <div class="container">
+                <div class="d-flex justify-content-center">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="bi bi-chevron-left"></i></a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#" class="active">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>...</li>
+                    <li><a href="#">10</a></li>
+                    <li>
+                      <a href="#"><i class="bi bi-chevron-right"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <!-- /Blog Pagination Section -->
+          </div>
 
-          <!-- Blog Pagination Section -->
-          <section id="blog-pagination" class="blog-pagination section">
+          <div class="col-lg-4 sidebar">
+            <div class="widgets-container">
+              <!-- Search Widget -->
+              <div class="search-widget widget-item">
+                <h3 class="widget-title">سرچ</h3>
+                <form action="">
+                  <input type="text" />
+                  <button type="submit" title="Search">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
+              <!--/Search Widget -->
 
-            <div class="container">
-              <div class="d-flex justify-content-center">
-                <ul>
-                  <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#" class="active">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li>...</li>
-                  <li><a href="#">10</a></li>
-                  <li><a href="#"><i class="bi bi-chevron-right"></i></a></li>
+              <!-- Categories Widget -->
+              <div class="categories-widget widget-item">
+                <h3 class="widget-title">دسته بندی ها</h3>
+                <ul class="mt-3">
+                  <li>
+                    <a href="#">معاینه داندان <span>(25)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">کامپوزت<span>(12)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">لمینت <span>(5)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">ارتودنسی <span>(22)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">کشیدن دندان <span>(8)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">روکش دندان <span>(14)</span></a>
+                  </li>
                 </ul>
               </div>
+              <!--/Categories Widget -->
+
+              <!-- Recent Posts Widget -->
+              <div class="recent-posts-widget widget-item">
+                <h3 class="widget-title">پستهای اخیر</h3>
+
+                <div class="post-item">
+                  <img
+                    src="../src/img/blog/blog-recent-1.jpg"
+                    alt=""
+                    class="flex-shrink-0"
+                  />
+                  <div>
+                    <h4>
+                      <a href="blog-details.html"
+                        >روش های خانگی مراقبت از دندان</a
+                      >
+                    </h4>
+                    <time datetime="2020-01-01">1 ژانویه 2020</time>
+                  </div>
+                </div>
+                <!-- End recent post item-->
+
+                <div class="post-item">
+                  <img
+                    src="../src/img/blog/blog-recent-2.jpg"
+                    alt=""
+                    class="flex-shrink-0"
+                  />
+                  <div>
+                    <h4><a href="blog-details.html">بهترین لمینت</a></h4>
+                    <time datetime="2020-01-01">1 ژانویه 2020</time>
+                  </div>
+                </div>
+                <!-- End recent post item-->
+
+                <div class="post-item">
+                  <img
+                    src="../src/img/blog/blog-recent-3.jpg"
+                    alt=""
+                    class="flex-shrink-0"
+                  />
+                  <div>
+                    <h4><a href="blog-details.html">بهترین کامپوزت</a></h4>
+                    <time datetime="2020-01-01">1 ژانویه 2020</time>
+                  </div>
+                </div>
+                <!-- End recent post item-->
+
+                <div class="post-item">
+                  <img
+                    src="../src/im/blog/blog-recent-4.jpg"
+                    alt=""
+                    class="flex-shrink-0"
+                  />
+                  <div>
+                    <h4>
+                      <a href="blog-details.html">
+                        بهترین زمان ارتودنسی دندان
+                      </a>
+                    </h4>
+                    <time datetime="2020-01-01">1 ژانویه 2020</time>
+                  </div>
+                </div>
+                <!-- End recent post item-->
+
+                <div class="post-item">
+                  <img
+                    src="../src/img/blog/blog-recent-5.jpg"
+                    alt=""
+                    class="flex-shrink-0"
+                  />
+                  <div>
+                    <h4>
+                      <a href="blog-details.html"
+                        >ابزار های بروز وتکنولوژی های بروز برای کشیدن دندان</a
+                      >
+                    </h4>
+                    <time datetime="2020-01-01">1 ژانویه 2020</time>
+                  </div>
+                </div>
+                <!-- End recent post item-->
+              </div>
+              <!--/Recent Posts Widget -->
+
+              <!-- Tags Widget -->
+              <div class="tags-widget widget-item">
+                <h3 class="widget-title">برچسب ها</h3>
+                <ul>
+                  <li><a href="#">لمینت</a></li>
+                  <li><a href="#">معاینه دندان</a></li>
+                  <li><a href="#">کشیدن دندان</a></li>
+                  <li><a href="#">کامپوزت</a></li>
+                  <li><a href="#">ارتودنسی</a></li>
+                </ul>
+              </div>
+              <!--/Tags Widget -->
             </div>
-
-          </section><!-- /Blog Pagination Section -->
-
-        </div>
-
-        <div class="col-lg-4 sidebar">
-
-          <div class="widgets-container">
-
-            <!-- Search Widget -->
-            <div class="search-widget widget-item">
-
-              <h3 class="widget-title">سرچ</h3>
-              <form action="">
-                <input type="text">
-                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-              </form>
-
-            </div><!--/Search Widget -->
-
-            <!-- Categories Widget -->
-            <div class="categories-widget widget-item">
-
-              <h3 class="widget-title">دسته بندی ها</h3>
-              <ul class="mt-3">
-                <li><a href="#">کلی <span>(25)</span></a></li>
-                <li><a href="#">سبک زندگی <span>(12)</span></a></li>
-                <li><a href="#">سفر <span>(5)</span></a></li>
-                <li><a href="#">طراحی <span>(22)</span></a></li>
-                <li><a href="#">خلاق <span>(8)</span></a></li>
-                <li><a href="#">آموزش <span>(14)</span></a></li>
-              </ul>
-
-            </div><!--/Categories Widget -->
-
-            <!-- Recent Posts Widget -->
-            <div class="recent-posts-widget widget-item">
-
-              <h3 class="widget-title">پستهای اخیر</h3>
-
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-1.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">هیچ چیز در چاپلوسی، اما در هیچ</a></h4>
-                  <time datetime="2020-01-01">1 ژانویه 2020</time>
-                </div>
-              </div><!-- End recent post item-->
-
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-2.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">اما مانع چیزی هم می شود</a></h4>
-                  <time datetime="2020-01-01">1 ژانویه 2020</time>
-                </div>
-              </div><!-- End recent post item-->
-
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-3.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">به این دلیل که هر دو و به عنوان بیشترین و مشابه تیره شده است</a></h4>
-                  <time datetime="2020-01-01">1 ژانویه 2020</time>
-                </div>
-              </div><!-- End recent post item-->
-
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-4.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">برای کار بدنی آماده نشوید</a></h4>
-                  <time datetime="2020-01-01">1 ژانویه 2020</time>
-                </div>
-              </div><!-- End recent post item-->
-
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-5.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">و دردهای مفسد که آن را می رنجاند</a></h4>
-                  <time datetime="2020-01-01">1 ژانویه 2020</time>
-                </div>
-              </div><!-- End recent post item-->
-
-            </div><!--/Recent Posts Widget -->
-
-            <!-- Tags Widget -->
-            <div class="tags-widget widget-item">
-
-              <h3 class="widget-title">Tags</h3>
-              <ul>
-                <li><a href="#">برنامه</a></li>
-                <li><a href="#">IT</a></li>
-                <li><a href="#">کسب و کار</a></li>
-                <li><a href="#">مک</a></li>
-                <li><a href="#">طراحی</a></li>
-                <li><a href="#">دفتر</a></li>
-                <li><a href="#">خلاق</a></li>
-                <li><a href="#">استودیو</a></li>
-                <li><a href="#">هوشمند</a></li>
-                <li><a href="#">نکات</a></li>
-                <li><a href="#">بازاریابی</a></li>
-              </ul>
-
-            </div><!--/Tags Widget -->
-
           </div>
-
         </div>
-
       </div>
-    </div>
-
-  </main>
-  <footer id="footer" class="footer light-background">
-
-    <div class="footer-top">
+    </main>
+    <footer class="footer-09">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">جدید</span>
-            </a>
-            <p>فقط به نادا زمین نیاز دارید تا دریتا والیز بزرگ را ببینید.</p>
-            <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+        <div class="row">
+          <!-- درباره ما -->
+          <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+            <h2
+              class="footer-heading d-flex lign-items-center justify-content-center"
+            >
+              <span
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <i class="ion-logo-ionic"></i>
+              </span>
+              درباره ما
+            </h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li>
+                  <span class="icon ion-ios-pin"></span>
+                  <span class="text"
+                    >خیابان 203 جعلی، مونتین ویو، سان فرانسیسکو، کالیفرنیا،
+                    آمریکا</span
+                  >
+                </li>
+                <li>
+                  <a href="tel:+23923929210">
+                    <span class="icon ion-ios-call"></span>
+                    <span class="text">+2 392 3929 210</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@example.com">
+                    <span class="icon ion-ios-send"></span>
+                    <span class="text">info@example.com</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <form action="#" class="subscribe-form">
+              <div class="form-group d-flex">
+                <input
+                  type="text"
+                  class="form-control rounded-left"
+                  placeholder="ارسال کنید"
+                />
+                <button type="submit" class="form-control submit rounded-right">
+                  <span class="sr-only">ایمیل را وارد کنید</span
+                  ><i class="ion-ios-send"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- آخرین اخبار -->
+          <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+            <h2
+              class="footer-heading d-flex lign-items-center justify-content-center"
+            >
+              <span
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <i class="ion-ios-list-box"></i>
+              </span>
+              آخرین اخبار
+            </h2>
+            <div class="block-21 mb-4 d-flex">
+              <a
+                class="img mr-4 rounded"
+                style="background-image: url('../src/img/clinic1.jpeg')"
+              ></a>
+              <div class="text">
+                <h3 class="heading">
+                  <a href="#">حتی قدرت‌مندترین نشانه هم کنترل ندارد</a>
+                </h3>
+                <div class="meta">
+                  <div>
+                    <a href="#"
+                      ><span class="icon-calendar"></span> 16 اکتبر 2019</a
+                    >
+                  </div>
+                  <div>
+                    <a href="#"><span class="icon-person"></span> ادمین</a>
+                  </div>
+                  <div>
+                    <a href="#"><span class="icon-chat"></span> 19</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-21 mb-4 d-flex">
+              <a
+                class="img mr-8 rounded"
+                style="background-image: url('../src/img/clinic2.jpeg')"
+              ></a>
+              <div class="text">
+                <h3 class="heading">
+                  <a href="#">Even dfgrdgg the about</a>
+                </h3>
+                <div class="meta">
+                  <div>
+                    <a href="#"
+                      ><span class="icon-calendar"></span> Oct. 16, 2019</a
+                    >
+                  </div>
+                  <div>
+                    <a href="#"><span class="icon-person"></span> Admin</a>
+                  </div>
+                  <div>
+                    <a href="#"><span class="icon-chat"></span> 19</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>لینک های مفید</h4>
-            <ul>
-              <li><a href="#">خانه </a></li>
-              <li><a href="#">درباه ما</a></li>
-              <li><a href="#">خدمات</a></li>
-              <li><a href="#">نمونه خدمات</a></li>
-              <li><a href="#">سیاست حفظ حریم خصوصی</a></li>
-            </ul>
+          <!-- اطلاعات -->
+          <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+            <h2
+              class="footer-heading d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <i class="ion-ios-document"></i>
+              </span>
+              اطلاعات
+            </h2>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">درباره ما</a></li>
+                <li><a href="#" class="py-1 d-block">محصولات</a></li>
+                <li><a href="#" class="py-1 d-block">وبلاگ</a></li>
+                <li><a href="#" class="py-1 d-block">تماس با ما</a></li>
+                <li><a href="#" class="py-1 d-block">راهنما و پشتیبانی</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>خدمات ما</h4>
-            <ul>
-              <li><a href="#">طراحی وب سایت</a></li>
-              <li><a href="#">توسعه وب</a></li>
-              <li><a href="#">مدیریت تولید</a></li>
-              <li><a href="#">بازار یابی</a></li>
-              <li><a href="#">طراحی گرافیک</a></li>
-            </ul>
-          </div>
+          <!-- اینستاگرام -->
+          <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+            <h2
+              class="footer-heading d-flex lign-items-center justify-content-center"
+            >
+              <span
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <i class="ion-logo-instagram"></i>
+              </span>
+              اینستاگرام
+            </h2>
+            <div class="block-24">
+              <div class="row no-gutters">
+                <!-- تصویر اول -->
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img
+                      src="../src/img/clinic2.jpeg"
+                      alt="Instagram Image 1"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <!-- تصویر دوم -->
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img
+                      src="../src/img/clinic2.jpeg"
+                      alt="Instagram Image 2"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img
+                      src="../src/img/clinic2.jpeg"
+                      alt="Instagram Image 2"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img
+                      src="../src/img/clinic2.jpeg"
+                      alt="Instagram Image 2"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img
+                      src="../src/img/clinic2.jpeg"
+                      alt="Instagram Image 2"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
 
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>درباه ما</h4>
-            <p> خیابان آدم</p>
-            <p>نیویورک, NY 535022</p>
-            <p>ایالات متحده</p>
-            <p class="mt-4"><strong>تلفن</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>ایمیل:</strong> <span>info@example.com</span></p>
+                <!-- تصویر سوم -->
+                <div class="col-4">
+                  <a href="#" target="_blank">
+                    <img
+                      src="../src/img/clinic2.jpeg"
+                      alt="Instagram Image 3"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
 
+        <!-- کپی رایت -->
+        <div class="row mt-5 pt-4 border-top">
+          <div class="col-md-6 col-lg-8">
+            <p class="copyright">
+              کپی رایت &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              تمامی حقوق محفوظ است.
+            </p>
+          </div>
+          <div
+            class="col-md-6 col-lg-4 text-center d-flex flex-column align-items-center"
+          >
+            <p class="copyright mb-0">
+              این سایت <i class="ion-ios-heart" aria-hidden="true"></i> ساخته
+              شده توسط
+            </p>
+            <a href="https://colorlib.com" target="_blank"
+              >مریم شادمان & امیررضا فرزان</a
+            >
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
 
-    <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">جدید</strong> <span>تمامی حقوق محفوظ است</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        طراحی شده توسط <a href="https://bootstrapmade.com/">بوت استرپ</a>
-      </div>
-    </div>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  </footer>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="../src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/vendor/php-email-form/validate.js"></script>
+    <script src="../src/vendor/aos/aos.js"></script>
+    <script src="../src/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../src/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../src/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../src/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="../src/js/main.js"></script>
+  </body>
 </html>
