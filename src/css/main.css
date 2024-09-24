@@ -293,6 +293,31 @@ h6 {
     visibility: visible;
   }
 }
+.flag-icon {
+  width: 24px; /* اندازه عرض پرچم */
+  height: 16px; /* اندازه ارتفاع پرچم */
+  margin-right: 8px; /* فاصله بین پرچم و متن */
+  vertical-align: middle; /* هم‌تراز کردن پرچم با متن */
+}
+
+.dropdown ul {
+  list-style: none; /* حذف نقطه یا شماره گذاری لیست */
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li a {
+  display: flex; /* استفاده از فلکس باکس برای تراز کردن آیتم‌ها */
+  align-items: center; /* هم‌تراز کردن آیتم‌ها در مرکز */
+  padding: 8px 16px; /* حاشیه داخلی لینک‌ها */
+  text-decoration: none; /* حذف خط زیر متن */
+  color: black; /* رنگ متن */
+}
+
+.dropdown ul li a:hover {
+  background-color: blue; /* پس‌زمینه آبی هنگام هاور */
+  color: white; /* تغییر رنگ متن به سفید */
+}
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
